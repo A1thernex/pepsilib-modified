@@ -496,7 +496,7 @@ local library = {
 		unhoveredOptionBottom = Color3.fromRGB(35, 35, 35),
 		tabText = Color3.fromRGB(185, 185, 185)
 	},
-	gui_parent = (function()
+	gui_parent = gethui,--[[(function()
 		local x, c = pcall(function()
 			--return game:GetService("CoreGui")
         return gethui
@@ -517,7 +517,7 @@ local library = {
 			return c
 		end
 		return error("Seriously bad engine. Can't find a place to store the GUI. Robust code can't help this much incompetence.")
-	end)(),
+	end)(),]]
 	colorpicker = false,
 	colorpickerconflicts = {},
 	rainbowflags = {},
