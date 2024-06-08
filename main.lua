@@ -496,7 +496,7 @@ local library = {
 		unhoveredOptionBottom = Color3.fromRGB(35, 35, 35),
 		tabText = Color3.fromRGB(185, 185, 185)
 	},
-	gui_parent = gethui,--[[(function()
+	gui_parent = gethui(),--[[(function()
 		local x, c = pcall(function()
 			--return game:GetService("CoreGui")
         return gethui
